@@ -1,0 +1,16 @@
+{
+  "name": "duckertown",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first pixel-world agent town prototype",
+  "main": "desktop/main.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "desktop": "node desktop/run-electron.js",
+    "desktop:dev": "node desktop/run-electron.js"
+  },
+  "devDependencies": {
+    "electron": "^37.2.1"
+  }
+}

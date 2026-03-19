@@ -1,0 +1,48 @@
+{
+  "id": "duckertown-alpha",
+  "title": "Duckertown Alpha",
+  "tileSize": 24,
+  "cols": 30,
+  "rows": 20,
+  "palette": {
+    "grass": "#8dc26f",
+    "path": "#d2b98b",
+    "water": "#67a6d8",
+    "soil": "#b97f50",
+    "wood": "#8d6a46",
+    "roof": "#c95d4f",
+    "plaza": "#d7d2c7",
+    "tree": "#4d8441"
+  },
+  "districts": [
+    { "id": "north-homes", "name": "North Homes", "x": 1, "y": 1, "w": 10, "h": 7, "color": "#9bcf7a" },
+    { "id": "market-strip", "name": "Market Strip", "x": 11, "y": 2, "w": 8, "h": 6, "color": "#e5d2a5" },
+    { "id": "civic-square", "name": "Civic Square", "x": 10, "y": 8, "w": 10, "h": 6, "color": "#d7d2c7" },
+    { "id": "work-yards", "name": "Work Yards", "x": 20, "y": 2, "w": 8, "h": 8, "color": "#d8c4a0" },
+    { "id": "south-gardens", "name": "South Gardens", "x": 3, "y": 14, "w": 12, "h": 5, "color": "#9dcf8b" }
+  ],
+  "buildings": [
+    { "id": "house-a", "name": "Cedar Row A", "type": "home", "x": 2, "y": 2, "w": 3, "h": 3, "doorX": 3, "doorY": 5 },
+    { "id": "house-b", "name": "Cedar Row B", "type": "home", "x": 6, "y": 2, "w": 3, "h": 3, "doorX": 7, "doorY": 5 },
+    { "id": "house-c", "name": "Cedar Row C", "type": "home", "x": 2, "y": 6, "w": 3, "h": 3, "doorX": 3, "doorY": 9 },
+    { "id": "house-d", "name": "Cedar Row D", "type": "home", "x": 6, "y": 6, "w": 3, "h": 3, "doorX": 7, "doorY": 9 },
+    { "id": "house-e", "name": "Maple Court A", "type": "home", "x": 21, "y": 12, "w": 3, "h": 3, "doorX": 22, "doorY": 15 },
+    { "id": "house-f", "name": "Maple Court B", "type": "home", "x": 25, "y": 12, "w": 3, "h": 3, "doorX": 26, "doorY": 15 },
+    { "id": "market", "name": "Town Market", "type": "work", "x": 12, "y": 3, "w": 3, "h": 3, "doorX": 13, "doorY": 6 },
+    { "id": "bakery", "name": "Sun Bakery", "type": "work", "x": 16, "y": 3, "w": 3, "h": 3, "doorX": 17, "doorY": 6 },
+    { "id": "cafe", "name": "Lantern Cafe", "type": "social", "x": 12, "y": 9, "w": 3, "h": 3, "doorX": 13, "doorY": 12 },
+    { "id": "clinic", "name": "River Clinic", "type": "work", "x": 16, "y": 9, "w": 3, "h": 3, "doorX": 17, "doorY": 12 },
+    { "id": "workshop", "name": "Weld Workshop", "type": "work", "x": 21, "y": 3, "w": 3, "h": 3, "doorX": 22, "doorY": 6 },
+    { "id": "library", "name": "Field Library", "type": "work", "x": 25, "y": 3, "w": 3, "h": 3, "doorX": 26, "doorY": 6 },
+    { "id": "garden", "name": "South Garden", "type": "farm", "x": 5, "y": 15, "w": 5, "h": 3, "doorX": 7, "doorY": 17 },
+    { "id": "dock", "name": "Pond Dock", "type": "social", "x": 20, "y": 16, "w": 4, "h": 2, "doorX": 21, "doorY": 16 },
+    { "id": "square", "name": "Stone Square", "type": "plaza", "x": 10, "y": 8, "w": 10, "h": 6, "doorX": 15, "doorY": 11 }
+  ],
+  "eventSpots": {
+    "festival": "square",
+    "rain": "cafe",
+    "rumor": "market",
+    "shortage": "market",
+    "workdrive": "workshop"
+  }
+}

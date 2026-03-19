@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Duckertown</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="duckertown-shell" id="duckertownApp">
+      <aside class="duckertown-left">
+        <section class="duckertown-panel duckertown-brand">
+          <span class="duckertown-eyebrow">Duckertown Alpha</span>
+          <h1>Pixel-town agent society</h1>
+          <p>A first local prototype where resident agents live through routine, memory, place, and social ties.</p>
+        </section>
+
+        <section class="duckertown-panel">
+          <div class="duckertown-panel-head">
+            <h2>World</h2>
+            <span id="worldClock"></span>
+          </div>
+          <div class="duckertown-chip-row" id="worldStatus"></div>
+          <div class="duckertown-button-grid">
+            <button type="button" id="pauseButton">Pause</button>
+            <button type="button" class="secondary" id="speedButton">Speed x1</button>
+            <button type="button" class="ghost" id="followButton">Follow</button>
+          </div>
+        </section>
+
+        <section class="duckertown-panel">
+          <div class="duckertown-panel-head">
+            <h2>Director</h2>
+            <span>Inject pressure</span>
+          </div>
+          <div class="duckertown-button-grid">
+            <button type="button" class="secondary" data-event="festival">Festival</button>
+            <button type="button" class="secondary" data-event="rain">Rain</button>
+            <button type="button" class="secondary" data-event="rumor">Rumor</button>
+            <button type="button" class="secondary" data-event="shortage">Shortage</button>
+            <button type="button" class="secondary" data-event="workdrive">Workdrive</button>
+            <button type="button" class="ghost" data-event="clear">Clear event</button>
+          </div>
+        </section>
+
+        <section class="duckertown-panel duckertown-residents-panel">
+          <div class="duckertown-panel-head">
+            <h2>Residents</h2>
+            <span id="residentCount"></span>
+          </div>
+          <div id="residentList" class="duckertown-list"></div>
+        </section>
+      </aside>
+
+      <main class="duckertown-main">
+        <section class="duckertown-panel duckertown-map-panel">
+          <div class="duckertown-panel-head">
+            <h2 id="mapTitle">Duckertown Alpha</h2>
+            <span id="cameraMode">God view</span>
+          </div>
+          <div class="duckertown-map-shell">
+            <canvas id="townCanvas" width="960" height="640" aria-label="Duckertown map"></canvas>
+          </div>
+          <div class="duckertown-legend">
+            <span><i class="legend-dot legend-front"></i>selected resident</span>
+            <span><i class="legend-dot legend-social"></i>social interaction</span>
+            <span><i class="legend-dot legend-place"></i>event hotspot</span>
+          </div>
+        </section>
+
+        <section class="duckertown-panel duckertown-log-panel">
+          <div class="duckertown-panel-head">
+            <h2>Town log</h2>
+            <span>Recent events</span>
+          </div>
+          <div id="eventLog" class="duckertown-log"></div>
+        </section>
+      </main>
+
+      <aside class="duckertown-right">
+        <section class="duckertown-panel">
+          <div class="duckertown-panel-head">
+            <h2>Selected resident</h2>
+            <span id="selectedMode"></span>
+          </div>
+          <div id="residentInspector" class="duckertown-inspector"></div>
+        </section>
+
+        <section class="duckertown-panel">
+          <div class="duckertown-panel-head">
+            <h2>Social graph</h2>
+            <span>Top relations</span>
+          </div>
+          <div id="relationshipList" class="duckertown-list"></div>
+        </section>
+
+        <section class="duckertown-panel">
+          <div class="duckertown-panel-head">
+            <h2>Town diagnostics</h2>
+            <span>Simulation state</span>
+          </div>
+          <div id="diagnostics" class="duckertown-inspector"></div>
+        </section>
+      </aside>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

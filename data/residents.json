@@ -1,0 +1,536 @@
+{
+  "residents": [
+    {
+      "id": "r-ava",
+      "name": "Ava",
+      "role": "grocer",
+      "home": "house-a",
+      "workplace": "market",
+      "hangout": "cafe",
+      "traits": ["steady", "observant", "community-minded"],
+      "biography": "Ava manages the market stalls and usually knows what the town is running short on.",
+      "memorySummary": [
+        "Helped stabilize the market after a late-spring shortage.",
+        "Trusts Rowan when inventory numbers matter."
+      ],
+      "relations": [
+        { "target": "r-rowan", "trust": 0.78, "warmth": 0.66, "rivalry": 0.08 },
+        { "target": "r-jules", "trust": 0.52, "warmth": 0.61, "rivalry": 0.18 },
+        { "target": "r-mira", "trust": 0.59, "warmth": 0.48, "rivalry": 0.12 }
+      ]
+    },
+    {
+      "id": "r-rowan",
+      "name": "Rowan",
+      "role": "baker",
+      "home": "house-b",
+      "workplace": "bakery",
+      "hangout": "square",
+      "traits": ["warm", "chatty", "ritual-driven"],
+      "biography": "Rowan runs the bakery and unintentionally becomes a rumor hub during lunch rush.",
+      "memorySummary": [
+        "Turned the festival crowd into the best sales day of the season.",
+        "Keeps a soft alliance with Ava because flour deliveries affect both shops."
+      ],
+      "relations": [
+        { "target": "r-ava", "trust": 0.75, "warmth": 0.72, "rivalry": 0.05 },
+        { "target": "r-elin", "trust": 0.47, "warmth": 0.58, "rivalry": 0.16 },
+        { "target": "r-lyra", "trust": 0.62, "warmth": 0.63, "rivalry": 0.07 }
+      ]
+    },
+    {
+      "id": "r-soren",
+      "name": "Soren",
+      "role": "mechanic",
+      "home": "house-c",
+      "workplace": "workshop",
+      "hangout": "dock",
+      "traits": ["practical", "quiet", "reliable"],
+      "biography": "Soren keeps the workshop and power lines running and dislikes avoidable chaos.",
+      "memorySummary": [
+        "Fixed the water pump during a storm blackout.",
+        "Keeps a wary eye on gossip that disrupts work routines."
+      ],
+      "relations": [
+        { "target": "r-tamsin", "trust": 0.68, "warmth": 0.44, "rivalry": 0.11 },
+        { "target": "r-cass", "trust": 0.54, "warmth": 0.52, "rivalry": 0.09 },
+        { "target": "r-miles", "trust": 0.46, "warmth": 0.38, "rivalry": 0.21 }
+      ]
+    },
+    {
+      "id": "r-lyra",
+      "name": "Lyra",
+      "role": "teacher",
+      "home": "house-d",
+      "workplace": "library",
+      "hangout": "square",
+      "traits": ["reflective", "patient", "civic"],
+      "biography": "Lyra keeps lessons and evening reading circles alive in the town library.",
+      "memorySummary": [
+        "Mediated a disagreement between young workers during autumn clean-up.",
+        "Believes the town's health depends on shared stories."
+      ],
+      "relations": [
+        { "target": "r-elin", "trust": 0.69, "warmth": 0.74, "rivalry": 0.03 },
+        { "target": "r-rowan", "trust": 0.61, "warmth": 0.67, "rivalry": 0.06 },
+        { "target": "r-noa", "trust": 0.55, "warmth": 0.5, "rivalry": 0.1 }
+      ]
+    },
+    {
+      "id": "r-tamsin",
+      "name": "Tamsin",
+      "role": "medic",
+      "home": "house-e",
+      "workplace": "clinic",
+      "hangout": "cafe",
+      "traits": ["calm", "protective", "diagnostic"],
+      "biography": "Tamsin works the clinic and notices small shifts in town stress before most people do.",
+      "memorySummary": [
+        "Tracked a fever cluster during a wet week.",
+        "Trusts Lyra to calm people before panic spreads."
+      ],
+      "relations": [
+        { "target": "r-lyra", "trust": 0.73, "warmth": 0.61, "rivalry": 0.04 },
+        { "target": "r-soren", "trust": 0.67, "warmth": 0.42, "rivalry": 0.08 },
+        { "target": "r-jules", "trust": 0.49, "warmth": 0.37, "rivalry": 0.17 }
+      ]
+    },
+    {
+      "id": "r-cass",
+      "name": "Cass",
+      "role": "carpenter",
+      "home": "house-f",
+      "workplace": "workshop",
+      "hangout": "dock",
+      "traits": ["direct", "craft-proud", "territorial"],
+      "biography": "Cass repairs homes and public structures and takes town maintenance personally.",
+      "memorySummary": [
+        "Rebuilt the square stage after a storm.",
+        "Sometimes clashes with Miles over whether image or durability matters more."
+      ],
+      "relations": [
+        { "target": "r-soren", "trust": 0.63, "warmth": 0.4, "rivalry": 0.14 },
+        { "target": "r-miles", "trust": 0.36, "warmth": 0.25, "rivalry": 0.41 },
+        { "target": "r-orin", "trust": 0.58, "warmth": 0.51, "rivalry": 0.08 }
+      ]
+    },
+    {
+      "id": "r-jules",
+      "name": "Jules",
+      "role": "courier",
+      "home": "house-a",
+      "workplace": "market",
+      "hangout": "square",
+      "traits": ["fast", "nosy", "social"],
+      "biography": "Jules moves goods and news between town corners faster than anyone else.",
+      "memorySummary": [
+        "Spread a market rumor that turned out half true and half damaging.",
+        "Knows who met whom more often than who planned what."
+      ],
+      "relations": [
+        { "target": "r-ava", "trust": 0.44, "warmth": 0.57, "rivalry": 0.19 },
+        { "target": "r-elin", "trust": 0.52, "warmth": 0.63, "rivalry": 0.08 },
+        { "target": "r-tamsin", "trust": 0.35, "warmth": 0.41, "rivalry": 0.23 }
+      ]
+    },
+    {
+      "id": "r-elin",
+      "name": "Elin",
+      "role": "librarian",
+      "home": "house-b",
+      "workplace": "library",
+      "hangout": "cafe",
+      "traits": ["careful", "curious", "methodical"],
+      "biography": "Elin archives letters, old maps, and the small personal histories people leave behind.",
+      "memorySummary": [
+        "Built the first memory ledger for town events.",
+        "Prefers evidence to drama but secretly enjoys both."
+      ],
+      "relations": [
+        { "target": "r-lyra", "trust": 0.81, "warmth": 0.69, "rivalry": 0.02 },
+        { "target": "r-jules", "trust": 0.49, "warmth": 0.58, "rivalry": 0.11 },
+        { "target": "r-noa", "trust": 0.57, "warmth": 0.53, "rivalry": 0.07 }
+      ]
+    },
+    {
+      "id": "r-orin",
+      "name": "Orin",
+      "role": "gardener",
+      "home": "house-c",
+      "workplace": "garden",
+      "hangout": "dock",
+      "traits": ["gentle", "seasonal", "place-bound"],
+      "biography": "Orin tends the south garden and notices environmental shifts before anyone else.",
+      "memorySummary": [
+        "Tracked blight signs before they reached the market.",
+        "Believes town mood changes with weather more than people admit."
+      ],
+      "relations": [
+        { "target": "r-cass", "trust": 0.59, "warmth": 0.48, "rivalry": 0.06 },
+        { "target": "r-nia", "trust": 0.72, "warmth": 0.66, "rivalry": 0.03 },
+        { "target": "r-mira", "trust": 0.51, "warmth": 0.39, "rivalry": 0.09 }
+      ]
+    },
+    {
+      "id": "r-mira",
+      "name": "Mira",
+      "role": "tailor",
+      "home": "house-d",
+      "workplace": "market",
+      "hangout": "cafe",
+      "traits": ["stylish", "strategic", "status-aware"],
+      "biography": "Mira measures the town through reputation, aesthetics, and who is winning attention.",
+      "memorySummary": [
+        "Used a festival wardrobe change to shift public mood after a tense week.",
+        "Understands social standing almost as an economy."
+      ],
+      "relations": [
+        { "target": "r-ava", "trust": 0.58, "warmth": 0.45, "rivalry": 0.14 },
+        { "target": "r-orin", "trust": 0.49, "warmth": 0.33, "rivalry": 0.12 },
+        { "target": "r-miles", "trust": 0.61, "warmth": 0.52, "rivalry": 0.09 }
+      ]
+    },
+    {
+      "id": "r-noa",
+      "name": "Noa",
+      "role": "fisher",
+      "home": "house-e",
+      "workplace": "dock",
+      "hangout": "cafe",
+      "traits": ["independent", "weather-sensitive", "steady"],
+      "biography": "Noa works the pond dock and keeps one foot in town life and one foot outside it.",
+      "memorySummary": [
+        "Warned the clinic about a bad water patch after heavy rain.",
+        "Dislikes rushed decisions made in crowded rooms."
+      ],
+      "relations": [
+        { "target": "r-lyra", "trust": 0.56, "warmth": 0.52, "rivalry": 0.05 },
+        { "target": "r-elin", "trust": 0.58, "warmth": 0.5, "rivalry": 0.04 },
+        { "target": "r-miles", "trust": 0.38, "warmth": 0.24, "rivalry": 0.25 }
+      ]
+    },
+    {
+      "id": "r-miles",
+      "name": "Miles",
+      "role": "broker",
+      "home": "house-f",
+      "workplace": "market",
+      "hangout": "square",
+      "traits": ["ambitious", "charismatic", "restless"],
+      "biography": "Miles keeps trying to turn the town's informal exchanges into more deliberate deals.",
+      "memorySummary": [
+        "Profit-minded during shortages but knows how quickly that can backfire.",
+        "Often sees coordination as leverage."
+      ],
+      "relations": [
+        { "target": "r-mira", "trust": 0.63, "warmth": 0.5, "rivalry": 0.11 },
+        { "target": "r-cass", "trust": 0.31, "warmth": 0.22, "rivalry": 0.44 },
+        { "target": "r-noa", "trust": 0.35, "warmth": 0.25, "rivalry": 0.26 }
+      ]
+    },
+    {
+      "id": "r-nia",
+      "name": "Nia",
+      "role": "farmer",
+      "home": "house-a",
+      "workplace": "garden",
+      "hangout": "square",
+      "traits": ["earthy", "reliable", "social"],
+      "biography": "Nia handles shared plots and keeps the gardens more communal than private.",
+      "memorySummary": [
+        "Turned a harvest dispute into a work-sharing compromise.",
+        "Knows who actually helps when labor gets heavy."
+      ],
+      "relations": [
+        { "target": "r-orin", "trust": 0.74, "warmth": 0.71, "rivalry": 0.02 },
+        { "target": "r-ava", "trust": 0.64, "warmth": 0.57, "rivalry": 0.06 },
+        { "target": "r-vale", "trust": 0.53, "warmth": 0.49, "rivalry": 0.09 }
+      ]
+    },
+    {
+      "id": "r-vale",
+      "name": "Vale",
+      "role": "ranger",
+      "home": "house-b",
+      "workplace": "dock",
+      "hangout": "garden",
+      "traits": ["watchful", "reserved", "protective"],
+      "biography": "Vale monitors the paths, tree line, and pond edge and dislikes disruptions that spread quietly.",
+      "memorySummary": [
+        "Tracked nighttime movement during a rumor spiral.",
+        "Believes town danger often starts as a pattern, not an event."
+      ],
+      "relations": [
+        { "target": "r-nia", "trust": 0.55, "warmth": 0.46, "rivalry": 0.05 },
+        { "target": "r-soren", "trust": 0.57, "warmth": 0.38, "rivalry": 0.08 },
+        { "target": "r-jules", "trust": 0.33, "warmth": 0.29, "rivalry": 0.19 }
+      ]
+    },
+    {
+      "id": "r-iris",
+      "name": "Iris",
+      "role": "herbalist",
+      "home": "house-c",
+      "workplace": "clinic",
+      "hangout": "garden",
+      "traits": ["careful", "soft-spoken", "memory-rich"],
+      "biography": "Iris supports the clinic with gathered herbs and keeps a detailed memory of seasonal patterns.",
+      "memorySummary": [
+        "Prevented a medicine shortage by storing dried herbs early.",
+        "Remembers who listens when quiet warnings are given."
+      ],
+      "relations": [
+        { "target": "r-tamsin", "trust": 0.79, "warmth": 0.58, "rivalry": 0.03 },
+        { "target": "r-orin", "trust": 0.63, "warmth": 0.6, "rivalry": 0.04 },
+        { "target": "r-jules", "trust": 0.39, "warmth": 0.35, "rivalry": 0.16 }
+      ]
+    },
+    {
+      "id": "r-dane",
+      "name": "Dane",
+      "role": "blacksmith",
+      "home": "house-d",
+      "workplace": "workshop",
+      "hangout": "cafe",
+      "traits": ["stubborn", "craft-intense", "loyal"],
+      "biography": "Dane works metals, repairs tools, and treats breakage like a moral failure.",
+      "memorySummary": [
+        "Kept tools flowing during the last planting crunch.",
+        "Finds gossip tolerable only when it predicts real maintenance problems."
+      ],
+      "relations": [
+        { "target": "r-soren", "trust": 0.66, "warmth": 0.37, "rivalry": 0.12 },
+        { "target": "r-cass", "trust": 0.61, "warmth": 0.42, "rivalry": 0.11 },
+        { "target": "r-miles", "trust": 0.34, "warmth": 0.18, "rivalry": 0.33 }
+      ]
+    },
+    {
+      "id": "r-pia",
+      "name": "Pia",
+      "role": "cook",
+      "home": "house-e",
+      "workplace": "cafe",
+      "hangout": "square",
+      "traits": ["welcoming", "tactical", "high-context"],
+      "biography": "Pia runs the cafe like an emotional pressure valve for the whole town.",
+      "memorySummary": [
+        "Calmed a near-fight by reorganizing seating during market rush.",
+        "Tracks town tension through what people stop saying."
+      ],
+      "relations": [
+        { "target": "r-rowan", "trust": 0.64, "warmth": 0.67, "rivalry": 0.05 },
+        { "target": "r-jules", "trust": 0.48, "warmth": 0.62, "rivalry": 0.11 },
+        { "target": "r-lyra", "trust": 0.67, "warmth": 0.7, "rivalry": 0.04 }
+      ]
+    },
+    {
+      "id": "r-kellan",
+      "name": "Kellan",
+      "role": "mason",
+      "home": "house-f",
+      "workplace": "workshop",
+      "hangout": "dock",
+      "traits": ["durable", "literal", "slow-to-trust"],
+      "biography": "Kellan builds walls, paths, and foundations, and thinks long-term by default.",
+      "memorySummary": [
+        "Argued that shortcuts in public works always become someone else's burden later.",
+        "Respects Cass more when plans survive weather."
+      ],
+      "relations": [
+        { "target": "r-cass", "trust": 0.57, "warmth": 0.31, "rivalry": 0.18 },
+        { "target": "r-dane", "trust": 0.62, "warmth": 0.33, "rivalry": 0.09 },
+        { "target": "r-miles", "trust": 0.29, "warmth": 0.16, "rivalry": 0.28 }
+      ]
+    },
+    {
+      "id": "r-bryn",
+      "name": "Bryn",
+      "role": "storyteller",
+      "home": "house-a",
+      "workplace": "square",
+      "hangout": "cafe",
+      "traits": ["dramatic", "empathetic", "socially agile"],
+      "biography": "Bryn is not formally in charge of anything, which somehow makes them influential everywhere.",
+      "memorySummary": [
+        "Can turn town history into motivation or panic depending on the moment.",
+        "Knows that narratives shape alliances as much as facts."
+      ],
+      "relations": [
+        { "target": "r-pia", "trust": 0.58, "warmth": 0.72, "rivalry": 0.04 },
+        { "target": "r-jules", "trust": 0.47, "warmth": 0.68, "rivalry": 0.09 },
+        { "target": "r-mira", "trust": 0.54, "warmth": 0.46, "rivalry": 0.12 }
+      ]
+    },
+    {
+      "id": "r-hel",
+      "name": "Hel",
+      "role": "watchmaker",
+      "home": "house-b",
+      "workplace": "workshop",
+      "hangout": "library",
+      "traits": ["precise", "time-bound", "minimalist"],
+      "biography": "Hel repairs clocks, keeps schedule boards accurate, and dislikes temporal drift in a town.",
+      "memorySummary": [
+        "Knows exactly how often routines break after storm days.",
+        "Treats lateness as a signal, not a flaw."
+      ],
+      "relations": [
+        { "target": "r-soren", "trust": 0.64, "warmth": 0.28, "rivalry": 0.07 },
+        { "target": "r-elin", "trust": 0.59, "warmth": 0.35, "rivalry": 0.04 },
+        { "target": "r-bryn", "trust": 0.31, "warmth": 0.22, "rivalry": 0.18 }
+      ]
+    },
+    {
+      "id": "r-odin",
+      "name": "Odin",
+      "role": "boatwright",
+      "home": "house-c",
+      "workplace": "dock",
+      "hangout": "dock",
+      "traits": ["coastal", "proud", "resource-aware"],
+      "biography": "Odin maintains the dock structures and watches resource flow through the pond edge.",
+      "memorySummary": [
+        "Tracks supply bottlenecks through transport rather than markets.",
+        "Prefers fewer promises and better tools."
+      ],
+      "relations": [
+        { "target": "r-noa", "trust": 0.69, "warmth": 0.44, "rivalry": 0.05 },
+        { "target": "r-kellan", "trust": 0.54, "warmth": 0.33, "rivalry": 0.08 },
+        { "target": "r-miles", "trust": 0.28, "warmth": 0.19, "rivalry": 0.23 }
+      ]
+    },
+    {
+      "id": "r-lark",
+      "name": "Lark",
+      "role": "messenger",
+      "home": "house-d",
+      "workplace": "square",
+      "hangout": "market",
+      "traits": ["fast", "playful", "signal-rich"],
+      "biography": "Lark is unofficially responsible for town coordination because everyone keeps sending them somewhere.",
+      "memorySummary": [
+        "Knows which routes fail when weather turns.",
+        "Carries more social context than any formal document."
+      ],
+      "relations": [
+        { "target": "r-jules", "trust": 0.63, "warmth": 0.7, "rivalry": 0.08 },
+        { "target": "r-bryn", "trust": 0.57, "warmth": 0.65, "rivalry": 0.06 },
+        { "target": "r-hel", "trust": 0.42, "warmth": 0.29, "rivalry": 0.11 }
+      ]
+    },
+    {
+      "id": "r-finn",
+      "name": "Finn",
+      "role": "beekeeper",
+      "home": "house-e",
+      "workplace": "garden",
+      "hangout": "garden",
+      "traits": ["ecological", "mild", "systems-minded"],
+      "biography": "Finn thinks about the town in terms of pollination, balance, and invisible dependencies.",
+      "memorySummary": [
+        "Sees small environmental drift before others notice social drift.",
+        "Treats town harmony as an ecosystem property."
+      ],
+      "relations": [
+        { "target": "r-orin", "trust": 0.71, "warmth": 0.64, "rivalry": 0.02 },
+        { "target": "r-iris", "trust": 0.65, "warmth": 0.61, "rivalry": 0.03 },
+        { "target": "r-mira", "trust": 0.43, "warmth": 0.31, "rivalry": 0.1 }
+      ]
+    },
+    {
+      "id": "r-vesper",
+      "name": "Vesper",
+      "role": "night-guard",
+      "home": "house-f",
+      "workplace": "square",
+      "hangout": "dock",
+      "traits": ["guarded", "serious", "boundary-aware"],
+      "biography": "Vesper works nights and therefore understands a different Duckertown than the daytime residents do.",
+      "memorySummary": [
+        "Night movement patterns say a lot about stress and secrecy.",
+        "Believes every town has a second shift personality."
+      ],
+      "relations": [
+        { "target": "r-vale", "trust": 0.68, "warmth": 0.34, "rivalry": 0.06 },
+        { "target": "r-odin", "trust": 0.52, "warmth": 0.27, "rivalry": 0.09 },
+        { "target": "r-jules", "trust": 0.31, "warmth": 0.21, "rivalry": 0.19 }
+      ]
+    },
+    {
+      "id": "r-esme",
+      "name": "Esme",
+      "role": "caretaker",
+      "home": "house-a",
+      "workplace": "square",
+      "hangout": "cafe",
+      "traits": ["communal", "high-memory", "gentle"],
+      "biography": "Esme keeps small public goods in order and notices who quietly falls through town routines.",
+      "memorySummary": [
+        "Tracks invisible social maintenance like cleaning, care, and check-ins.",
+        "Knows that towns fail slowly before they fail loudly."
+      ],
+      "relations": [
+        { "target": "r-pia", "trust": 0.7, "warmth": 0.73, "rivalry": 0.03 },
+        { "target": "r-lyra", "trust": 0.68, "warmth": 0.69, "rivalry": 0.03 },
+        { "target": "r-miles", "trust": 0.33, "warmth": 0.24, "rivalry": 0.18 }
+      ]
+    },
+    {
+      "id": "r-quill",
+      "name": "Quill",
+      "role": "scribe",
+      "home": "house-b",
+      "workplace": "library",
+      "hangout": "square",
+      "traits": ["archival", "skeptical", "pattern-seeking"],
+      "biography": "Quill writes formal notices and keeps institutional memory from dissolving into gossip.",
+      "memorySummary": [
+        "Differentiates what the town remembers from what it merely repeats.",
+        "Suspicious of any story that spreads faster than evidence."
+      ],
+      "relations": [
+        { "target": "r-elin", "trust": 0.77, "warmth": 0.48, "rivalry": 0.04 },
+        { "target": "r-bryn", "trust": 0.42, "warmth": 0.27, "rivalry": 0.16 },
+        { "target": "r-jules", "trust": 0.36, "warmth": 0.22, "rivalry": 0.21 }
+      ]
+    },
+    {
+      "id": "r-hale",
+      "name": "Hale",
+      "role": "miller",
+      "home": "house-c",
+      "workplace": "bakery",
+      "hangout": "market",
+      "traits": ["supply-minded", "steady", "friction-aware"],
+      "biography": "Hale tracks the grain chain behind the bakery and market and therefore sees scarcity early.",
+      "memorySummary": [
+        "Measures town fragility through missing inputs, not speeches.",
+        "Knows when a shortage is logistical rather than agricultural."
+      ],
+      "relations": [
+        { "target": "r-rowan", "trust": 0.71, "warmth": 0.46, "rivalry": 0.06 },
+        { "target": "r-ava", "trust": 0.66, "warmth": 0.41, "rivalry": 0.08 },
+        { "target": "r-miles", "trust": 0.39, "warmth": 0.23, "rivalry": 0.19 }
+      ]
+    },
+    {
+      "id": "r-sel",
+      "name": "Sel",
+      "role": "musician",
+      "home": "house-d",
+      "workplace": "square",
+      "hangout": "cafe",
+      "traits": ["expressive", "ambient", "bridge-building"],
+      "biography": "Sel affects town mood more than formal power and often softens hard edges through atmosphere.",
+      "memorySummary": [
+        "Can shift a public space from tense to warm in under ten minutes.",
+        "Treats emotion as infrastructure."
+      ],
+      "relations": [
+        { "target": "r-bryn", "trust": 0.69, "warmth": 0.75, "rivalry": 0.04 },
+        { "target": "r-pia", "trust": 0.62, "warmth": 0.71, "rivalry": 0.03 },
+        { "target": "r-hel", "trust": 0.41, "warmth": 0.3, "rivalry": 0.08 }
+      ]
+    }
+  ]
+}
